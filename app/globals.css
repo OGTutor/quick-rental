@@ -6,6 +6,33 @@ html,
 body,
 :root {
 	height: 100%;
-	background-color: black;
-	color-scheme: dark;
+	background-color: #ffffff;
+	color-scheme: white;
+}
+
+.mantine-Carousel-control {
+	border: none;
+	color: black;
+
+	&:hover {
+		color: #f97316;
+	}
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.separator {
+	margin: 0 8px;
+	color: orange;
 }
