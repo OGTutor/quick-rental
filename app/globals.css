@@ -15,24 +15,24 @@ body,
 	color: black;
 
 	&:hover {
-		color: #f97316;
+		color: #ff8404;
 	}
 }
 
-.input-group {
-	display: flex;
-	align-items: center;
+.like-button {
+	@apply bg-no-repeat w-20 h-14 bg-left bg-transparent;
+	background-size: 2900%;
 }
 
-.input {
-	padding: 10px 20px;
-	font-size: 16px;
-	border: 2px solid #ccc;
-	border-radius: 50px;
-	text-align: center;
+.animate-button {
+	animation: heart-burst 0.8s steps(28) forwards;
 }
 
-.separator {
-	margin: 0 8px;
-	color: orange;
+@keyframes heart-burst {
+	0% {
+		@apply bg-left;
+	}
+	100% {
+		@apply bg-right;
+	}
 }
