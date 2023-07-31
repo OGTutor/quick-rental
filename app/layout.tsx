@@ -1,4 +1,9 @@
+'use client';
+
 import Navbar from '@/components/Navbar';
+import ToasterProvider from '@/providers/ToasterProvider';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -18,7 +23,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Navbar>{children}</Navbar>
+				<ToasterProvider />
+				<LocalizationProvider dateAdapter={AdapterDayjs}>
+					<Navbar>{children}</Navbar>
+				</LocalizationProvider>
 			</body>
 		</html>
 	);
