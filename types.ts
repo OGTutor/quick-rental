@@ -1,5 +1,6 @@
 interface Path {
-	icon: string;
+	icon?: string;
+	Icon?: React.ReactElement;
 	label: string;
 	active: boolean;
 	href: string;
