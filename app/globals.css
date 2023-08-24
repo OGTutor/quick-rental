@@ -8,6 +8,7 @@ body,
 	height: 100%;
 	background-color: #ffffff;
 	color-scheme: white;
+	overflow-x: hidden;
 }
 
 .mantine-Carousel-control {
@@ -26,6 +27,11 @@ body,
 
 .animate-button {
 	animation: heart-burst 0.8s steps(28) forwards;
+}
+
+.reserve-shadow {
+	position: relative;
+	box-shadow: 6px 6px 0px 0px #efe9e9;
 }
 
 @keyframes heart-burst {
