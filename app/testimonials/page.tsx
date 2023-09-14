@@ -1,5 +1,21 @@
+import Footer from '@/components/Footer';
+import GeneralHeader from '@/components/GeneralHeader';
+import TestimonialsContent from './components/TestimonialsContent';
+
 const Testimonials = () => {
-	return <div>Testimonials page</div>;
+	return (
+		<>
+			<header>
+				<GeneralHeader title="Testimonials" subTitle="Testimonials" />
+			</header>
+			<main>
+				<TestimonialsContent />
+			</main>
+			<footer>
+				<Footer />
+			</footer>
+		</>
+	);
 };
 
 export default Testimonials;
